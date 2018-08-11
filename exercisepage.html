@@ -3,90 +3,14 @@
 
 <body>
   <head>
-    <link rel="stylesheet" type="text/css" href="decorate.css">
+    <link rel="stylesheet" type="text/css" href="decoratepageex.css">
     </head>
   <div id="header">
     <header>
       <h1>This website will help you to improve your weight loss</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="">
-              <b>Exercise</b>
-            </a>
-          </li>
-          <li>
-            <a href="www.youtube.com">
-              <b>Food</b>
-            </a>
-          </li>
-          <li>
-            <a href="WebEx.html">
-              <b>Body Measuremeent</b>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <img class=left src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
-    <img class=right src="https://media.istockphoto.com/photos/healthy-food-clean-eating-selection-picture-id854725402?k=6&m=854725402&s=612x612&w=0&h=bgi7V_3_zu_AsFEqxyyVr8peMq5hbYXNhKFyAEnJpaI=">
-    <div class=center align="center">
-      <b> Exercise & Food </b>
-    </div>
-  </div>
+    <img class=pictop src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
 
-  <div>
-
-    <h2>
-      <b>First, Let's check body measurement</b>
-    </h2>
-    </span>
-    <hr>
-     Please fill in the blanks 
-    <ul>
-      </span>
-      <li>  Name :
-      <input type="text" id="name"></li> 
-      <br>
-      <br>
-      <li>  Surname :
-      <input type="text" id="surname"></li> 
-      <br>
-      <br> <li> Age :
-      <input type="number" id="age"></li> 
-      <br>
-      <br> <li> Your height :
-      <input type="number" name="height" id="height"></input></li> 
-      <br>
-      <br> Your weight :
-      <input type="number" name="height" id="weight"></input>
-      &nbsp;
-      <input type="submit" name="calBMI" id="calBMI" value="Calculate BMI" OnClick="JavaScript:calBMI();"></input>
-      <br><hr>
-      <br>Your BMI are ::
-      <span id="showBMI"></span>
-    </ul>
-  </div>
-
-  <script type="text/javascript">
-    var height = 0;
-    var weight = 0;
-    var bmi;
-
-    function calBMI() {
-      height = document.getElementById("height").value;
-      weight = document.getElementById("weight").value
-
-      bmi = weight / (Math.pow((height / 100), 2))
-      console.log(height);
-      console.log(weight);
-      console.log(bmi);
-      document.getElementById("showBMI").innerHTML = bmi;
-    }
-
-
-
-  </script>
 </body>
 
 </html>

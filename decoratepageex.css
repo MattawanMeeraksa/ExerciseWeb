@@ -1,0 +1,26 @@
+body {
+    font-family: "cloud";
+  }
+
+header {
+    background-color: hsl(180, 90%, 35%);
+    color: #FFFFFF;
+    text-align: center;
+    border-style: solid;
+
+  }
+/* .left{
+    width: auto;
+    height: auto;
+    align-content: center;
+} */
+
+.pictop {
+    /* isplay: inline-table;d */
+    width: 1515px;
+    height: 750px;
+}
+
+.left{
+    background-color: brown;
+}
