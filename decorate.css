@@ -1,4 +1,4 @@
-.header {
+header {
     background-color: hsl(180, 90%, 35%);
     color: #FFFFFF;
     text-align: center;
@@ -68,6 +68,9 @@
     background-color: #0F5897;
     padding: 5px 10px 8px 10px;
   }
+   li{
+        list-style-type: none;
+   }
 
   button:hover {
     animation-name: background-color;
