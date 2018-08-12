@@ -9,18 +9,92 @@ header {
     border-style: solid;
 
   }
-/* .left{
-    width: auto;
-    height: auto;
-    align-content: center;
-} */
+
+  #dis-table{
+    display: inline-table;
+  }
+
 
 #pictop {
-    /* isplay: inline-table;d */
-    width: 1515px;
-    height: 750px;
+    width: 1660px;
+    height: 900px;
 }
 
 #left{
     background-color: brown;
+}
+
+#firstpic{
+    float: left;
+}
+
+#first-para{
+    font-size: 22px;
+    background-color: yellowgreen;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px ;
+}
+
+#second-para{
+    background-color: tomato;
+    font-size: 22px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#doctor-second-pic{
+    float: right;
+    width: 350px;
+    height:250px;
+    align-content: center;
+}
+
+#in-theory{
+   font-size:20px;
+   background-color: tan;
+}
+
+#first-trick-pic{
+    float: left;
+    width: 1200px;
+    height: 800px"
+}
+
+#red-block{
+    list-style-type: none;
+    font-size: 22px;
+    background-color: salmon;
+}
+ #under-pic-block{
+    font-size: 20px;
+ }
+
+ #pop-pink{
+   background-color: hotpink;
+   color: honeydew;
+   text-align: center;
+ }
+
+#img-of-source{
+    width: 300px;
+    height:280px;
+}
+
+#bio-tomato{
+    background-color: tomato;
+    color: honeydew;
+    text-align: center;
+}
+
+#blend-blue{
+    background-color:dodgerblue;
+    color: honeydew;
+    text-align: center"
+}
+
+#booky-black{
+   background-color:rgb(15, 19, 22);
+   color: honeydew;
+   text-align: center"
 }
