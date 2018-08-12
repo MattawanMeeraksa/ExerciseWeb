@@ -94,12 +94,18 @@ header {
     background-color: lightskyblue;
     width: 50%;
     height: 100%;
+    /* align-items: center;
+    align-content: center;
+    justify-content: start; */
   }
 
   #box-2 {
     background-color: orangered;
     width: 50%;
     height: 50%;
+    /* align-items: center;
+    align-content: center;
+    justify-content: start; */
 
   }
 
