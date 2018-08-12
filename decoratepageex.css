@@ -15,12 +15,12 @@ header {
     align-content: center;
 } */
 
-.pictop {
+#pictop {
     /* isplay: inline-table;d */
     width: 1515px;
     height: 750px;
 }
 
-.left{
+#left{
     background-color: brown;
 }
