@@ -9,6 +9,21 @@ header {
     border-style: solid;
 
   }
+  nav {
+    background-color: hsl(180, 80%, 25%);
+    color: #FFFFFF;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+    color: #FFFFFF;
+  }
+
+  nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #FFFFFF;
+  }
 
   #dis-table{
     display: inline-table;
