@@ -6,7 +6,18 @@ new Vue({
         navbar1: "Exercise",
         navbar2: "Food",
         navbar3: "Body Measurement",
-        eandf: "Exercise & Food"
+        eandf: "Exercise & Food",
+        firstmeasure: "First, Let's check body measurement",
+        filthebl: "Please fill in the blanks",
+        fname: "Firstname :",
+        lname: "Lastname :",
+        age: "Age :",
+        gender: "Gender : ",
+        weight: "Your weight : ",
+        height: "Your height : ",
+        result: "Your BMI are ::", 
+        steptwo: "Second, Let's see your BMI that in any rate",
+        bmichart: "This is BMI chart"
     }
    
 })
