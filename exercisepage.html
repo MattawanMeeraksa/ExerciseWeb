@@ -4,16 +4,38 @@
 <body>
 
     <head>
-        <link rel="stylesheet" type="text/css" href="decoratepageex.css">
+        
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Advising for lose weight-exercise</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="decorate.css">
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
-    <div id="header">
+    <div id="How-to-Exercise">
         <header>
-            <h1>This website will help you to improve your weight loss</h1>
-            <a href="WebEx.html">
-                <button style="float:right">Back</button>
-            </a>
-        </header>
-
+            <h1>{{sentence}}</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="WebEx.html">
+                    <b>{{navbar3}}</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="foodpage.html">
+                    <b>{{navbar2}}</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="exercisepage.html">
+                    <b>{{navbar1}}</b>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
         <img id=pictop src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
         <h2>Exercise :: การออกกำลังกายลดความอ้วน</h2>
 
@@ -65,7 +87,7 @@
                 <br>
                 <hr>
                 <li id="red-block">
-                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <u>การออกกำลังกายลดน้ำหนัก และเพิ่มความกระชับไปพร้อมกัน</u> เช่น การออกกำลังกายที่นำท่าของการชกมวยมาประยุกต์ใช้
                     (Boxing) โยคะร้อน (Hot Yoga) หรือ การฝึกการทรงตัวและการเคลื่อนไหวอย่างรวดเร็ว (Agility Workout)
                 </li>
@@ -110,6 +132,7 @@
             </ul>
 
         </div>
+        <script src="app2.js" charset="utf-8"></script>
 </body>
 
 </html>
