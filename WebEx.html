@@ -11,15 +11,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="decorate.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
-  
+
   <div id="Advertising-lose-weight">
     <header>
-      <h1>This is {{sentence}}</h1>
+      <h1>{{sentence}}</h1>
       <nav>
         <ul>
           <li>
-            <a href="exercisepage.html">
-              <b>{{navbar1}}</b>
+            <a href="WebEx.html">
+              <b>{{navbar3}}</b>
             </a>
           </li>
           <li>
@@ -28,64 +28,78 @@
             </a>
           </li>
           <li>
-            <a href="WebEx.html">
-              <b>{{navbar3}}</b>
+            <a href="exercisepage.html">
+              <b>{{navbar1}}</b>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <img class=left src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
-    <img class=right src="https://media.istockphoto.com/photos/healthy-food-clean-eating-selection-picture-id854725402?k=6&m=854725402&s=612x612&w=0&h=bgi7V_3_zu_AsFEqxyyVr8peMq5hbYXNhKFyAEnJpaI=">
-    <div class=center align="center">
+    <img id="left-pic" src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
+    <img id="right-pic" src="https://media.istockphoto.com/photos/healthy-food-clean-eating-selection-picture-id854725402?k=6&m=854725402&s=612x612&w=0&h=bgi7V_3_zu_AsFEqxyyVr8peMq5hbYXNhKFyAEnJpaI=">
+    <div id="center-space" align="center">
       <b> {{eandf}}</b>
     </div>
- 
 
-  <div id="box-container">
-    <div id="box-1">
-      <h2>
-        <b>First, Let's check body measurement</b>
-      </h2>
-      </span>
-      <hr> Please fill in the blanks
-      <ul>
+
+    <div id="box-container">
+      <div id="box-1">
+        <h2>
+          <b>{{firstmeasure}}</b>
+        </h2>
         </span>
-        <li> Name :
-          <input type="text" id="name">
-        </li>
-        <br>
-        <br>
-        <li> Surname :
-          <input type="text" id="surname">
-        </li>
-        <br>
-        <br>
-        <li> Age :
-          <input type="number" id="age">
-        </li>
-        <br>
-        <br>
-        <li> Your height :
-          <input type="number" name="height" id="height"></input>
-        </li>
-        <br>
-        <br> Your weight :
-        <input type="number" name="height" id="weight"></input>
-        &nbsp;
-        <button id="calBMI" OnClick="JavaScript:calBMI();">Calculate BMI</button>
-        <br>
-        <hr>
-        <br>Your BMI are ::
-        <span id="showBMI"></span>
-      </ul>
-    </div>
+        <hr> {{filthebl}}
+        <ul>
+          </span>
+          <li> {{fname}}
+            <input type="text" id="name">
+          </li>
+          <br>
+          <br>
+          <li> {{lname}}
+            <input type="text" id="surname">
+          </li>
+          <br>
+          <br>
+          <li>{{age}}
+            <input type="number" id="age">
+          </li>
+          <br>
+          <br>
+          <li>{{gender}}
+            <input type="text" id="gender">
+          </li>
+          <br>
+          <br>
+          <li> {{height}}
+            <input type="number" name="height" id="height"></input>
+          </li>
+          <br>
+          <br>{{weight}}
+          <input type="number" name="height" id="weight"></input>
+          &nbsp;
+          <button id="calBMI" OnClick="JavaScript:calBMI();">Calculate BMI</button>
+          <br>
+          <hr>
+          <br>{{result}}
+          <span id="showBMI"></span>
+        </ul>
+      </div>
 
-    <div id="box-2">
-      <b>Second, Let's follow the target that you want</b>
+      <div id="box-2">
+        <h2>
+          <b>{{steptwo}}</b>
+        </h2>
+        <div id="boxofbmi">
+          <div id="bmifwomen">
+            <h3>{{bmichart}}</h3>
+            <img src="https://amp.businessinsider.com/images/57d291cadd0895c6308b46b0-750-580.png">
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
   <script type="text/javascript">
     var height = 0;
     var weight = 0;
@@ -105,7 +119,7 @@
 
 
   </script>
-<script src="app.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
