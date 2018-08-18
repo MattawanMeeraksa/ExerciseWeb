@@ -18,6 +18,14 @@ new Vue({
         result: "Your BMI are ::", 
         steptwo: "Second, Let's see your BMI that in any rate",
         bmichart: "This is BMI chart"
+    },
+    methods:{
+        getSentence: function(){
+            return this.sentence
+        },
+        setSentence: function(n){
+            return this.sentence=n;
+        }
     }
    
 })
