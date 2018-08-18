@@ -107,14 +107,22 @@
 
     function calBMI() {
       height = document.getElementById("height").value;
-      weight = document.getElementById("weight").value
-
-      bmi = weight / (Math.pow((height / 100), 2))
+      weight = document.getElementById("weight").value;
+      gender = document.getElementById("gender").value;
+      age = document.getElementById("age").value;
+      bmi = weight / (Math.pow((height / 100), 2));
       console.log(height);
       console.log(weight);
       console.log(bmi);
+      console.log(gender);
+      console.log(age);
+
       document.getElementById("showBMI").innerHTML = bmi;
-    }
+
+    //   if((gender == "M" || gender == "m" || gender == "male" || gender=="Male")){
+    //     if(bmi<=)
+    //   }
+    // }
 
 
 
