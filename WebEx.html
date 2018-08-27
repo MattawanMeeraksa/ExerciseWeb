@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Advising for lose weight-exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="decorate.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
@@ -35,99 +37,118 @@
         </ul>
       </nav>
     </header>
-    <img id="left-pic" src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
-    <img id="right-pic" src="https://media.istockphoto.com/photos/healthy-food-clean-eating-selection-picture-id854725402?k=6&m=854725402&s=612x612&w=0&h=bgi7V_3_zu_AsFEqxyyVr8peMq5hbYXNhKFyAEnJpaI=">
-    <div id="center-space" align="center">
-      <b> {{eandf}}</b>
-    </div>
-
-
-    <div id="box-container">
-      <div id="box-1">
-        <h2>
-          <b>{{firstmeasure}}</b>
-        </h2>
-        </span>
-        <hr> {{filthebl}}
-        <ul>
-          </span>
-          <li> {{fname}}
-            <input type="text" id="name">
-          </li>
-          <br>
-          <br>
-          <li> {{lname}}
-            <input type="text" id="surname">
-          </li>
-          <br>
-          <br>
-          <li>{{age}}
-            <input type="number" id="age">
-          </li>
-          <br>
-          <br>
-          <li>{{gender}}
-            <input type="text" id="gender">
-          </li>
-          <br>
-          <br>
-          <li> {{height}}
-            <input type="number" name="height" id="height"></input>
-          </li>
-          <br>
-          <br>{{weight}}
-          <input type="number" name="height" id="weight"></input>
-          &nbsp;
-          <button id="calBMI" OnClick="JavaScript:calBMI();">Calculate BMI</button>
-          <br>
-          <hr>
-          <br>{{result}}
-          <span id="showBMI"></span>
-        </ul>
+    <!-- <div class="row no-gutters">
+      <div class="col-4">
+        hello
       </div>
+      <div class="col-6">
+        <button class="btn btn-primary">Say</button>
+      </div>
+    </div>
+    <div id="center-space"> -->
+    <div id="twoPixOfPage">
+      <div class="row no-gutters">
+        <div class="col-6">
+          <img id="left-pic" src="https://timedotcom.files.wordpress.com/2017/07/the-scienceof-exercise.jpg">
+        </div>
+        <div class="col-6">
+          <img id="right-pic" src="https://media.istockphoto.com/photos/healthy-food-clean-eating-selection-picture-id854725402?k=6&m=854725402&s=612x612&w=0&h=bgi7V_3_zu_AsFEqxyyVr8peMq5hbYXNhKFyAEnJpaI=">
+          <!-- <b> {{eandf}}</b> -->
+        </div>
+      </div>
+      <!-- </div> -->
 
-      <div id="box-2">
-        <h2>
-          <b>{{steptwo}}</b>
-        </h2>
-        <div id="boxofbmi">
-          <div id="bmifwomen">
-            <h3>{{bmichart}}</h3>
-            <img src="https://amp.businessinsider.com/images/57d291cadd0895c6308b46b0-750-580.png">
+      <div id="box-container">
+        <div id="box-1">
+          <h2>
+            <b>{{firstmeasure}}</b>
+          </h2>
+          </span>
+          <hr> {{filthebl}}
+          <ul>
+            </span>
+            <li> {{fname}}
+              <input type="text" id="name">
+            </li>
+            <br>
+            <br>
+            <li> {{lname}}
+              <input type="text" id="surname">
+            </li>
+            <br>
+            <br>
+            <li>{{age}}
+              <input type="number" id="age">
+            </li>
+            <br>
+            <br>
+            <li>
+              <select class="custom-select" id="gender" style="width:50%">
+                <option selected>{{gender}}</option>
+                <option value="1">Male / ผู้ชาย</option>
+                <option value="2">Female / ผู้หญิง</option>
+              </select>
 
+            </li>
+            <br>
+            <br>
+            <li> {{height}}
+              <input type="number" name="height" id="height"></input>
+            </li>
+            <br>
+            <br>{{weight}}
+            <input type="number" name="height" id="weight"></input>
+            &nbsp;
+            <button type="button" class="btn btn-primary btn-lg" OnClick="calBMI();">Calculate BMI</button>
+            <br>
+            <hr>
+            <br>{{result}}
+            <span id="showBMI"></span>
+          </ul>
+        </div>
+
+        <div id="box-2">
+          <h2>
+            <b>{{steptwo}}</b>
+          </h2>
+          <div style="display: flex;">
+            <div style="background:royalblue;">
+              <h3>{{bmichart}}</h3>
+              <img src="https://amp.businessinsider.com/images/57d291cadd0895c6308b46b0-750-580.png">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript">
-    var height = 0;
-    var weight = 0;
-    var bmi;
+    <script type="text/javascript">
+      var height = 0;
+      var weight = 0;
+      var bmi;
 
-    function calBMI() {
-      height = document.getElementById("height").value;
-      weight = document.getElementById("weight").value;
-      gender = document.getElementById("gender").value;
-      age = document.getElementById("age").value;
-      bmi = weight / (Math.pow((height / 100), 2));
-      console.log(height);
-      console.log(weight);
-      console.log(bmi);
-      console.log(gender);
-      console.log(age);
+      function calBMI() {
+        height = document.getElementById("height").value;
+        weight = document.getElementById("weight").value;
+        gender = document.getElementById("gender").value;
+        age = document.getElementById("age").value;
+        bmi = weight / (Math.pow((height / 100), 2));
+        console.log(height);
+        console.log(weight);
+        console.log(bmi);
+        console.log(gender);
+        console.log(age);
 
-      document.getElementById("showBMI").innerHTML = bmi;
+        document.getElementById("showBMI").innerHTML = bmi;
 
-    //   if((gender == "M" || gender == "m" || gender == "male" || gender=="Male")){
-    //     if(bmi<=)
-    //   }
-    // }
+      }
+    </script>
 
-
-
-  </script>
-  <script src="app.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
