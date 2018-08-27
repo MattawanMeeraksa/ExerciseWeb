@@ -19,7 +19,7 @@ new Vue({
         steptwo: "Second, Let's see your BMI that in any rate",
         bmichart: "This is BMI chart"
     },
-    methods:{
+    methods:{ //สร้างmethodเพื่อเป็นการกำหนดค่าให้ข้อมูลให้กับตัวใหม่ได้
         getSentence: function(){
             return this.sentence
         },
