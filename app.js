@@ -12,7 +12,7 @@ new Vue({
         fname: "Firstname :",
         lname: "Lastname :",
         age: "Age :",
-        gender: "Gender : ",
+        gender: "Gender",
         weight: "Your weight : ",
         height: "Your height : ",
         result: "Your BMI are ::", 
